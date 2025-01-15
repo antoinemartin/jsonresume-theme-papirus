@@ -53,13 +53,15 @@ function render (resume) {
       let months = endDate.diff(startDate, 'months')
 
       if (years > 0) {
-        text += `${years} ${pluralize('years', years)}`
+        //text += `${years} ${pluralize('years', years)}`
+        text += `${years} ${pluralize('année', years)}`
       }
       if (months > 0) {
         if (years > 0) {
           text += ' '
         }
-        text += `${months} ${pluralize('months', months)}`
+        //text += `${months} ${pluralize('months', months)}`
+        text += `${months} mois`
       }
 
       return text
